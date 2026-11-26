@@ -13,20 +13,77 @@
     <header>
         <h1>Cafetería Aroma</h1>
         <p>Un lugar para disfrutar cada momento.</p>
+        <nav aria-label="Navegación principal">
+            <a href="#menu">Menú</a>
+            <a href="#horarios">Horarios</a>
+            <a href="#ubicacion">Ubicación</a>
+            <a href="#contacto">Contacto</a>
+        </nav>
     </header>
 
     <main>
-        <h2>Bienvenidos a Cafetería Aroma</h2>
-        <p>
-            Somos una cafetería dedicada a ofrecer café de calidad,
-            bebidas deliciosas y un ambiente cómodo para compartir
-            con amigos y familiares.
-        </p>
-        <h2>Nuestro café, tu momento especial.</h2>
+        <section aria-labelledby="bienvenida">
+            <h2 id="bienvenida">Bienvenidos a Cafetería Aroma</h2>
+            <p>Disfruta un café, algo recién horneado y un espacio cómodo para compartir con amigos y familiares.</p>
+        </section>
+
+        <section id="menu" aria-labelledby="titulo-menu">
+            <h2 id="titulo-menu">Menú</h2>
+            <p>Precios en pesos mexicanos (MXN).</p>
+            <div class="tarjetas">
+                <div class="tarjeta">
+                    <h3>Café</h3>
+                    <ul class="productos">
+                        <li><span>Espresso</span> <strong>$35</strong></li>
+                        <li><span>Americano</span> <strong>$42</strong></li>
+                        <li><span>Capuchino</span> <strong>$58</strong></li>
+                    </ul>
+                </div>
+                <div class="tarjeta">
+                    <h3>Bebidas frías</h3>
+                    <ul class="productos">
+                        <li><span>Latte helado</span> <strong>$65</strong></li>
+                        <li><span>Cold brew</span> <strong>$62</strong></li>
+                        <li><span>Limonada de menta</span> <strong>$48</strong></li>
+                    </ul>
+                </div>
+                <div class="tarjeta">
+                    <h3>Pan y postres</h3>
+                    <ul class="productos">
+                        <li><span>Croissant</span> <strong>$45</strong></li>
+                        <li><span>Panqué de naranja</span> <strong>$49</strong></li>
+                        <li><span>Pastel de chocolate</span> <strong>$68</strong></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <div class="tarjetas">
+            <section class="tarjeta" id="horarios" aria-labelledby="titulo-horarios">
+                <h2 id="titulo-horarios">Horarios</h2>
+                <dl class="horarios">
+                    <dt>Lunes a viernes</dt>
+                    <dd>08:00 a 20:00</dd>
+                    <dt>Sábado y domingo</dt>
+                    <dd>09:00 a 18:00</dd>
+                </dl>
+            </section>
+            <section class="tarjeta" id="ubicacion" aria-labelledby="titulo-ubicacion">
+                <h2 id="titulo-ubicacion">Ubicación</h2>
+                <p>Calle del Grano 24<br>Colonia Jardín del Alba<br>Ciudad de México, México</p>
+            </section>
+            <section class="tarjeta" id="contacto" aria-labelledby="titulo-contacto">
+                <h2 id="titulo-contacto">Contacto</h2>
+                <address>
+                    <p>Correo: <a href="mailto:hola@cafearoma.example">hola@cafearoma.example</a></p>
+                    <p>Teléfono: +52 55 0000 0000</p>
+                </address>
+            </section>
+        </div>
     </main>
 
     <footer>
-        <p>&copy; 2026 Cafetería Aroma. Todos los derechos reservados.</p>
+        <p>&copy; 2026 Cafetería Aroma. Sitio de muestra con datos ficticios.</p>
     </footer>
 
 </body>
